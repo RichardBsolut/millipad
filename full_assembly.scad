@@ -9,7 +9,7 @@ use <./rib.scad>
 
 module bottomSide() {
     chassiO();
-    right(WALL*4)
+    right(WALL*4+1)
         chassiI();
 
     //Left cranks
@@ -57,7 +57,7 @@ module bottomSide() {
 
 module fullBottom() {
     bottomSide();
-    right(52) xflip()
+    right(54) xflip()
     bottomSide();    
     move(x=2.5+2,y=-5,z=13)
         zflip()

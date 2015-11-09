@@ -30,7 +30,7 @@ module wallGrip() {
 module smallRib() {
     baseRib();
     wallGrip();
-    right(42)
+    right(43)
     wallGrip();    
 }
 
