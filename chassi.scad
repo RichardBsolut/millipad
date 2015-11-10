@@ -134,6 +134,9 @@ module chassiI(legs=LEG_COUNT) {
     for(i = NUT_POSITION) {
         back(i*10)
             right(10/2)zrot(-90)
-                m3NutHolder(cutted=false);
+                m3NutHolder(cutted=false,play=NUT_PLAY);
     }
 }
+
+$fn=50;
+chassiI();
